@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
+
+:root {
+     --main-background-color: #FFE500;
+     --main-companion-color: #242325;
+     --sub-companion-color: #FF7D00;
+}
+
+
+* {
+     box-sizing: border-box;
+}
+
+
+body {
+     width: 100%;
+     height: 100vh;
+     margin: 0;
+     background-color: var(--main-background-color);
+     position: relative;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: 'Vampiro One', cursive;
+}
+
+.card {
+     width: 270px;
+     min-width: 300px;
+     max-width: 400px;
+     background: white;
+     /* box-shadow: 6px 6px 1px 0px var(--sub-companion-color); */
+     padding: 10px;
+     position: relative;
+}
+
+.pumpkin__container {
+     position: absolute;
+     top: -33px;
+     right: 17px;
+     scale: 1.5;
+}
+
+.card__header {
+     background: var(--main-companion-color);
+     overflow: hidden;
+}
+
+.card__body {
+     text-align: center;
+}
+
+h3 {
+     margin: 0;
+     padding: 15px;
+     color: var(--sub-companion-color);
+}
+
+.text__wrapper {
+     position: relative;
+     margin: 15px 20px;
+}
+
+.line__top,
+.line__bot {
+     position: absolute;
+     width: 100%;
+     height: 3px;
+     background-color: var(--main-companion-color);
+     bottom: 0;
+     transform: translateX(-50%);
+     left: 50%;
+     width: 0%;
+}
+
+.line__bot {
+     height: 10px;
+}
+
+.first__word,
+.last__word {
+     opacity: 0;
+     display: inline-block;
+}
