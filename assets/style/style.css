@@ -23,6 +23,7 @@ body {
      align-items: center;
      justify-content: center;
      font-family: 'Vampiro One', cursive;
+     position: relative;
 }
 
 .card {
@@ -82,4 +83,21 @@ h3 {
 .last__word {
      opacity: 0;
      display: inline-block;
+}
+
+.overlay__layer {
+     z-index: 5000;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+}
+
+.fireworks__container {
+     position: absolute;
+     transform: translate(-50%, -50%);
+     width: 30px;
+     height: 30px;
+     z-index: 10000;
 }
